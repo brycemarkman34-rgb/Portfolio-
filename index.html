@@ -68,15 +68,6 @@ h2{font-family:var(--font-display);font-size:2.6rem;font-weight:500;letter-spaci
 .skill-category-title{font-size:12px;font-weight:500;letter-spacing:0.06em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:0.75rem}
 .skill-tag-list{display:flex;flex-wrap:wrap;gap:6px}
 .skill-tag{font-size:12px;padding:4px 10px;border-radius:40px;border:0.5px solid var(--border);color:var(--ink-muted)}
-.about-top{display:grid;grid-template-columns:1fr auto;gap:2.5rem;align-items:start;margin-bottom:1.5rem}
-.about-photo{width:155px;height:185px;object-fit:cover;object-position:center top;border-radius:8px;border:0.5px solid var(--border)}
-.about-stats-row{display:flex;flex-direction:row;gap:1rem}
-.about-stats-row .stat-box{flex:1}
-.about-text{font-size:15px;color:var(--ink-muted);line-height:1.8}
-.about-text p+p{margin-top:1rem}
-.stat-box{background:white;border:0.5px solid var(--border);border-radius:8px;padding:1rem 1.25rem}
-.stat-num{font-family:var(--font-display);font-size:1.9rem;color:var(--ink);line-height:1}
-.stat-label{font-size:12px;color:var(--ink-muted);margin-top:4px}
 .contact-inner{background:var(--ink);color:var(--cream);border-radius:12px;padding:3rem;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:1.5rem}
 .contact-inner h2{font-family:var(--font-display);font-size:2.4rem;font-weight:500;color:var(--cream)}
 .contact-inner p{font-size:14px;color:rgba(250,249,246,0.6);margin-top:0.4rem;max-width:400px}
@@ -86,10 +77,7 @@ h2{font-family:var(--font-display);font-size:2.6rem;font-weight:500;letter-spaci
 .contact-linkedin:hover{color:var(--cream);border-color:var(--cream)}
 footer{text-align:center;padding:2rem;font-size:12px;color:var(--ink-faint);border-top:0.5px solid var(--border);max-width:1140px;margin:0 auto}
 @media(max-width:640px){
-.hero-sub{white-space:normal}
-.about-top{grid-template-columns:1fr}.about-stats-row{flex-direction:column}.contact-inner{padding:2rem}.contact-info{flex-direction:column;gap:0.75rem}
-nav{padding:0 1.25rem}section{padding:3rem 1.25rem}
-}
+.contact-inner{padding:2rem}.contact-info{flex-direction:column;gap:0.75rem}
 </style>
 </head>
 <body>
@@ -100,7 +88,6 @@ nav{padding:0 1.25rem}section{padding:3rem 1.25rem}
     <li><a href="#projects">Projects</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#experience">Experience</a></li>
-    <li><a href="#about">About</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
@@ -246,28 +233,6 @@ nav{padding:0 1.25rem}section{padding:3rem 1.25rem}
         <p class="skill-category-title">Certifications</p>
         <div class="skill-tag-list"><span class="skill-tag">Excel Certified</span><span class="skill-tag">Word Certified</span><span class="skill-tag">PowerPoint Certified</span></div>
       </div>
-    </div>
-  </div>
-</section>
-
-<hr class="divider"/>
-
-<section id="about">
-  <p class="section-label">Background</p>
-  <h2>About me</h2>
-  <div style="margin-top:1.5rem">
-    <div class="about-top">
-      <div class="about-text">
-        <p>I'm a senior at the University of Denver majoring in Business Analytics, with a strong interest in turning data into meaningful, real-world insights. Through my coursework and projects, I've built experience using Python, SQL, R, Tableau, and Excel across areas like predictive modeling, database design, and data visualization.</p>
-        <p>Outside of academics, I like staying active by playing basketball, pickleball, and soccer, and I'm always searching for new music or a good concert to go to. I studied abroad at Queen Mary University of London in Fall 2025, where I traveled to several countries throughout Europe and Africa.</p>
-        <p>I'm currently seeking a full-time Data Analyst role and am based in Denver, with openness to relocation. I'm especially interested in opportunities in healthcare, finance, technology, or hospitality, but I'm excited to apply my skills in any industry where I can make an impact.</p>
-      </div>
-      <img class="about-photo" src="Files/headshot.jpg" alt="Bryce Markman"/>
-    </div>
-    <div class="about-stats-row">
-      <div class="stat-box"><div class="stat-num">3.91</div><div class="stat-label">GPA in Business Analytics</div></div>
-      <div class="stat-box"><div class="stat-num">20+</div><div class="stat-label">Analytics projects</div></div>
-
     </div>
   </div>
 </section>
