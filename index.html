@@ -74,6 +74,19 @@ h2{font-family:var(--font-display);font-size:2.6rem;font-weight:500;letter-spaci
 .status-badge{background:transparent;border:0.5px solid var(--border);color:var(--ink-faint);font-size:10px;font-weight:500;letter-spacing:0.04em;text-transform:uppercase;padding:3px 9px;border-radius:40px}
 .project-planned{font-size:12px;color:var(--ink-faint);margin-top:auto;padding-top:0.85rem;border-top:0.5px solid var(--border)}
 .skills-section-inner{margin-top:2rem}
+.cred-columns{display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;margin-top:2.5rem}
+.cred-subhead{font-family:var(--font-display);font-size:1.4rem;font-weight:500;margin-bottom:1.4rem}
+.skill-row{margin-bottom:1.15rem}
+.skill-row:last-child{margin-bottom:0}
+.skill-row-label{font-size:13px;font-weight:600;color:var(--ink);margin-bottom:0.3rem}
+.skill-row-items{font-size:14px;color:var(--ink-muted)}
+.cert-group-label{font-size:11px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:0.85rem}
+.cert-group-label.is-second{margin-top:1.75rem}
+.cert-entry{margin-bottom:1.1rem}
+.cert-entry:last-child{margin-bottom:0}
+.cert-name{font-size:14.5px;font-weight:600;color:var(--ink);line-height:1.4}
+.cert-provider{font-size:12.5px;color:var(--ink-muted);margin-top:0.2rem}
+.cert-completed-line{font-size:13px;color:var(--ink-muted);line-height:1.6}
 .skills-intro{font-size:15px;color:var(--ink-muted);line-height:1.7;margin-bottom:2rem;max-width:620px}
 .skills-categories{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1.5rem}
 .skill-category{background:white;border:0.5px solid var(--border);border-radius:8px;padding:1.25rem}
@@ -90,6 +103,10 @@ h2{font-family:var(--font-display);font-size:2.6rem;font-weight:500;letter-spaci
 footer{text-align:center;padding:2rem;font-size:12px;color:var(--ink-faint);border-top:0.5px solid var(--border);max-width:1140px;margin:0 auto}
 @media(max-width:640px){
 .contact-inner{padding:2rem}.contact-info{flex-direction:column;gap:0.75rem}
+}
+@media(max-width:640px){
+.contact-inner{padding:2rem}.contact-info{flex-direction:column;gap:0.75rem}
+.cred-columns{grid-template-columns:1fr;gap:2.5rem}
 }
 </style>
 </head>
@@ -139,7 +156,7 @@ footer{text-align:center;padding:2rem;font-size:12px;color:var(--ink-faint);bord
         <div class="skill-pills-top">
           <span class="skill-pill-top sp-blue">Python</span><span class="skill-pill-top sp-blue">pandas</span><span class="skill-pill-top sp-teal">Pyomo</span><span class="skill-pill-top sp-teal">HiGHS</span><span class="skill-pill-top sp-gray">REST API</span>
         </div>
-        <div class="card-footer"><a href="https://drive.google.com/drive/folders/1MT6BXQjBUjY-Mm28KQp9mpjZMHL2exuZ?usp=drive_link" target="_blank" style="font-size:12px;color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent)">Project Files</a></div>
+        <div class="card-footer"><a href="https://drive.google.com/drive/folders/1MT6BXQjBUjY-Mm28KQp9mpjZMHL2exuZ?usp=drive_link" target="_blank" style="font-size:12px;color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent)">View Project</a></div>
       </div>
     </div>
 
@@ -155,7 +172,7 @@ footer{text-align:center;padding:2rem;font-size:12px;color:var(--ink-faint);bord
         <div class="skill-pills-top">
           <span class="skill-pill-top sp-teal">R</span><span class="skill-pill-top sp-teal">ggplot2</span><span class="skill-pill-top sp-blue">Web Scraping</span><span class="skill-pill-top sp-gray">Regression</span>
         </div>
-        <div class="card-footer"><a href="https://drive.google.com/drive/folders/1E9lINPPNbteo-KT8_uLcP6OKW96jDbs4?usp=drive_link" target="_blank" style="font-size:12px;color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent)">Project Files</a></div>
+        <div class="card-footer"><a href="https://drive.google.com/drive/folders/1E9lINPPNbteo-KT8_uLcP6OKW96jDbs4?usp=drive_link" target="_blank" style="font-size:12px;color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent)">View Project</a></div>
       </div>
     </div>
 
@@ -171,7 +188,7 @@ footer{text-align:center;padding:2rem;font-size:12px;color:var(--ink-faint);bord
         <div class="skill-pills-top">
           <span class="skill-pill-top sp-green">Excel</span><span class="skill-pill-top sp-gray">Statistics</span><span class="skill-pill-top sp-gray">Hypothesis Testing</span>
         </div>
-        <div class="card-footer"><a href="https://drive.google.com/drive/folders/14zdJp5t7fbLXfLXEyTU2JJQCGBW2-F9t?usp=drive_link" target="_blank" style="font-size:12px;color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent)">Project Files</a></div>
+        <div class="card-footer"><a href="https://drive.google.com/drive/folders/14zdJp5t7fbLXfLXEyTU2JJQCGBW2-F9t?usp=drive_link" target="_blank" style="font-size:12px;color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent)">View Project</a></div>
       </div>
     </div>
 
@@ -187,14 +204,14 @@ footer{text-align:center;padding:2rem;font-size:12px;color:var(--ink-faint);bord
         <div class="skill-pills-top">
           <span class="skill-pill-top sp-blue">SQL</span><span class="skill-pill-top sp-amber">Tableau</span><span class="skill-pill-top sp-gray">SQLite</span><span class="skill-pill-top sp-gray">Lucidchart</span>
         </div>
-        <div class="card-footer"><a href="https://drive.google.com/drive/folders/1BiPYkUYe92zFMO4u-4o9GHKShllTsiRb?usp=drive_link" target="_blank" style="font-size:12px;color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent)">Project Files</a></div>
+        <div class="card-footer"><a href="https://drive.google.com/drive/folders/1BiPYkUYe92zFMO4u-4o9GHKShllTsiRb?usp=drive_link" target="_blank" style="font-size:12px;color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent)">View Project</a></div>
       </div>
     </div>
 
   </div>
 
   <div style="margin-top:2rem;padding:1rem 1.25rem;background:var(--accent-light);border:0.5px solid rgba(24,95,165,0.2);border-radius:8px;display:flex;align-items:center;justify-content:center">
-    <a href="https://drive.google.com/drive/folders/1kp6q0uu6QlpMFmGFJn42PJhrZ5tbiVEf?usp=drive_link" target="_blank" style="font-size:13px;font-weight:500;color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent)">View Google Drive →</a>
+    <a href="https://drive.google.com/drive/folders/1kp6q0uu6QlpMFmGFJn42PJhrZ5tbiVEf?usp=drive_link" target="_blank" style="font-size:13px;font-weight:500;color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent)">View All Project Files →</a>
   </div>
 </section>
 
@@ -325,34 +342,39 @@ footer{text-align:center;padding:2rem;font-size:12px;color:var(--ink-faint);bord
 <hr class="divider"/>
 
 <section id="skills">
-  <p class="section-label">Toolkit</p>
-  <h2>Skills &amp; Certifications</h2>
+  <p class="section-label">Credentials</p>
+  <h2>Certifications &amp; Skills</h2>
   <div class="skills-section-inner">
-    <p class="skills-intro">A collection of the tools, languages, and skills I've built through hands-on projects, coursework, and real-world data at DU.</p>
-    <div class="skills-categories">
-      <div class="skill-category">
-        <p class="skill-category-title">Languages</p>
-        <div class="skill-tag-list"><span class="skill-tag">Python</span><span class="skill-tag">SQL</span><span class="skill-tag">R</span><span class="skill-tag">T-SQL</span></div>
+    <p class="skills-intro">Core technical skills and certifications supporting my work across sports betting, analytics, and data science.</p>
+    <div class="cred-columns">
+      <div>
+        <h3 class="cred-subhead">Skills</h3>
+        <div class="skill-row">
+          <p class="skill-row-label">Programming &amp; Data</p>
+          <p class="skill-row-items">Python &middot; SQL &middot; R &middot; Excel</p>
+        </div>
+        <div class="skill-row">
+          <p class="skill-row-label">Analytics &amp; Modeling</p>
+          <p class="skill-row-items">Regression &middot; Statistical Analysis &middot; A/B Testing &middot; Machine Learning &middot; Optimization</p>
+        </div>
+        <div class="skill-row">
+          <p class="skill-row-label">Visualization &amp; Tools</p>
+          <p class="skill-row-items">Tableau &middot; Power BI &middot; GitHub &middot; Jupyter</p>
+        </div>
       </div>
-      <div class="skill-category">
-        <p class="skill-category-title">Visualization</p>
-        <div class="skill-tag-list"><span class="skill-tag">Tableau</span><span class="skill-tag">Power BI</span><span class="skill-tag">DAX</span></div>
-      </div>
-      <div class="skill-category">
-        <p class="skill-category-title">Databases</p>
-        <div class="skill-tag-list"><span class="skill-tag">SQL Server</span><span class="skill-tag">SQLite</span></div>
-      </div>
-      <div class="skill-category">
-        <p class="skill-category-title">Statistical &amp; Machine Learning Methods</p>
-        <div class="skill-tag-list"><span class="skill-tag">Regression</span><span class="skill-tag">Optimization</span><span class="skill-tag">ANOVA</span><span class="skill-tag">NLP</span><span class="skill-tag">Sentiment Analysis</span><span class="skill-tag">Simulation</span><span class="skill-tag">Hypothesis Testing</span><span class="skill-tag">Dimensional Modeling</span></div>
-      </div>
-      <div class="skill-category">
-        <p class="skill-category-title">Tools &amp; Platforms</p>
-        <div class="skill-tag-list"><span class="skill-tag">Visual Studio</span><span class="skill-tag">Excel</span><span class="skill-tag">Jupyter</span><span class="skill-tag">Google Colab</span><span class="skill-tag">Lucidchart</span><span class="skill-tag">Visio</span><span class="skill-tag">R Studio</span><span class="skill-tag">GitHub</span></div>
-      </div>
-      <div class="skill-category">
-        <p class="skill-category-title">Certifications</p>
-        <div class="skill-tag-list"><span class="skill-tag">Excel Certified</span><span class="skill-tag">Word Certified</span><span class="skill-tag">PowerPoint Certified</span></div>
+      <div>
+        <h3 class="cred-subhead">Certifications</h3>
+        <p class="cert-group-label">In Progress</p>
+        <div class="cert-entry">
+          <p class="cert-name">Google Advanced Data Analytics Professional Certificate</p>
+          <p class="cert-provider">Google</p>
+        </div>
+        <div class="cert-entry">
+          <p class="cert-name">Machine Learning Specialization</p>
+          <p class="cert-provider">DeepLearning.AI &middot; Stanford Online</p>
+        </div>
+        <p class="cert-group-label is-second">Completed</p>
+        <p class="cert-completed-line">Microsoft Excel Certification &middot; Microsoft Word Certification &middot; Microsoft PowerPoint Certification</p>
       </div>
     </div>
   </div>
