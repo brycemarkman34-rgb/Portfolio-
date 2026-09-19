@@ -5,24 +5,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Bryce Markman · Professional Portfolio</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml"/>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet"/>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
---cream:#FAF9F6;--ink:#1A1A18;--ink-muted:#5A5A54;--ink-faint:#9A9A90;
+--cream:#F7F5EF;--ink:#111111;--ink-muted:#5F5C55;--ink-faint:#706C64;
+--navy:#14213D;--cobalt:#2454C4;
 --accent:#185FA5;--accent-light:#E6F1FB;--teal:#0F6E56;--teal-light:#E1F5EE;
---amber:#BA7517;--amber-light:#FAEEDA;--coral:#993C1D;--coral-light:#FAECE7;
---purple:#534AB7;--purple-light:#EEEDFE;--green:#3B6D11;--green-light:#EAF3DE;
---border:rgba(26,26,24,0.12);
---font-display:'DM Serif Display',Georgia,serif;--font-body:'DM Sans',system-ui,sans-serif;
+--amber:#BA7517;--amber-light:#FAEEDA;--green:#3B6D11;--green-light:#EAF3DE;
+--border:rgba(17,17,17,0.12);
+--font-display:'DM Serif Display',Georgia,serif;--font-body:'Manrope',system-ui,sans-serif;--font-mono:'IBM Plex Mono',ui-monospace,monospace;
 }
 html{scroll-behavior:smooth}
 body{font-family:var(--font-body);background:var(--cream);color:var(--ink);line-height:1.6}
-nav{position:sticky;top:0;z-index:100;background:rgba(250,249,246,0.93);backdrop-filter:blur(8px);border-bottom:0.5px solid var(--border);padding:0 2.5rem;display:flex;align-items:center;justify-content:space-between;height:60px}
+nav{position:sticky;top:0;z-index:100;background:rgba(247,245,239,0.93);backdrop-filter:blur(8px);border-bottom:0.5px solid var(--border);padding:0 2.5rem;display:flex;align-items:center;justify-content:space-between;height:60px}
 .nav-logo{font-family:var(--font-display);font-size:17px;letter-spacing:-0.3px}
 .nav-links{display:flex;gap:2rem;list-style:none}
 .nav-links a{font-size:13px;color:var(--ink-muted);text-decoration:none;letter-spacing:0.03em}
-.nav-links a:hover{color:var(--ink)}
+.nav-links a:hover{color:var(--navy)}
 .hero{max-width:1140px;margin:0 auto;padding:6rem 4rem 4.5rem}
 .hero-eyebrow{font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent);font-weight:500;margin-bottom:1.2rem;display:flex;align-items:center;gap:8px}
 .hero-eyebrow::before{content:'';display:block;width:24px;height:1px;background:var(--accent)}
@@ -36,17 +36,12 @@ nav{position:sticky;top:0;z-index:100;background:rgba(250,249,246,0.93);backdrop
 .btn-primary:hover{background:#333}
 .btn-outline{background:transparent;color:var(--ink);border-color:var(--border)}
 .btn-outline:hover{border-color:var(--ink)}
-.badge-stack{display:flex;flex-direction:column;gap:10px;padding-top:0.5rem}
-.skill-badge{font-size:12px;font-weight:500;padding:7px 14px;border-radius:40px;white-space:nowrap;text-align:center}
-.badge-blue{background:var(--accent-light);color:#0C447C}
-.badge-teal{background:var(--teal-light);color:#085041}
-.badge-green{background:var(--green-light);color:#27500A}
 hr.divider{max-width:1140px;margin:0 auto;border:none;border-top:0.5px solid var(--border)}
-section{max-width:1140px;margin:0 auto;padding:4.5rem 4rem}
-.section-label{font-size:13px;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink);font-weight:500;margin-bottom:1.25rem;display:flex;align-items:center;gap:12px}
+section{max-width:1140px;margin:0 auto;padding:4rem 4rem}
+.section-label{font-family:var(--font-mono);font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--navy);font-weight:500;margin-bottom:1.25rem;display:flex;align-items:center;gap:12px}
 .section-label::after{content:'';flex:1;height:0.5px;background:var(--border)}
+#projects .section-label{font-family:var(--font-body);font-size:13px;color:var(--ink)}
 h2{font-family:var(--font-display);font-size:2.6rem;font-weight:500;letter-spacing:-0.02em;margin-bottom:0.5rem}
-.projects-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1.5rem;margin-top:2.5rem}
 .projects-grid-v2{display:grid;grid-template-columns:repeat(auto-fit,minmax(440px,1fr));gap:1.75rem;margin-top:2.5rem}
 .project-card-v2{background:white;border:0.5px solid var(--border);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;transition:transform 0.18s,box-shadow 0.18s}
 .project-card-v2:hover{transform:translateY(-3px);box-shadow:0 10px 28px rgba(26,26,24,0.09)}
@@ -56,59 +51,58 @@ h2{font-family:var(--font-display);font-size:2.6rem;font-weight:500;letter-spaci
 .project-card-v2 .project-title{font-size:18px;margin-bottom:0}
 .project-metric{font-size:13.5px;font-weight:600}
 .project-card-v2 .project-desc{font-size:13.5px;margin-bottom:0}
-.project-card{background:white;border:0.5px solid var(--border);border-radius:8px;padding:1.5rem;display:flex;flex-direction:column;transition:transform 0.18s}
-.project-card:hover{transform:translateY(-2px)}
+.card-footer{margin-top:auto;padding-top:1rem;border-top:0.5px solid var(--border);display:flex;align-items:center;justify-content:space-between}
+.project-title{font-size:15px;font-weight:500;margin-bottom:0.5rem;line-height:1.4}
+.project-desc{font-size:13px;color:var(--ink-muted);line-height:1.6;flex:1;margin-bottom:1rem}
+.project-planned{font-size:12px;color:var(--ink-faint);margin-top:auto;padding-top:0.85rem;border-top:0.5px solid var(--border)}
 .skill-pills-top{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:0.9rem}
 .skill-pill-top{font-size:11px;font-weight:500;padding:3px 9px;border-radius:40px}
 .sp-blue{background:var(--accent-light);color:#0C447C}
 .sp-teal{background:var(--teal-light);color:#085041}
 .sp-amber{background:var(--amber-light);color:#633806}
-.sp-coral{background:var(--coral-light);color:#712B13}
-.sp-purple{background:var(--purple-light);color:#3C3489}
 .sp-green{background:var(--green-light);color:#27500A}
 .sp-gray{background:#F1EFE8;color:#5F5E5A}
-.project-title{font-size:15px;font-weight:500;margin-bottom:0.5rem;line-height:1.4}
-.project-desc{font-size:13px;color:var(--ink-muted);line-height:1.6;flex:1;margin-bottom:1rem}
-.card-footer{margin-top:auto;padding-top:1rem;border-top:0.5px solid var(--border);display:flex;align-items:center;justify-content:space-between}
-.building-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.5rem;margin-top:2.5rem}
-.status-badge{background:transparent;border:0.5px solid var(--border);color:var(--ink-faint);font-size:10px;font-weight:500;letter-spacing:0.04em;text-transform:uppercase;padding:3px 9px;border-radius:40px}
-.project-planned{font-size:12px;color:var(--ink-faint);margin-top:auto;padding-top:0.85rem;border-top:0.5px solid var(--border)}
+.building-grid{margin-top:2.5rem;display:flex;flex-direction:column}
+.project-card{padding:2rem 0;border-top:0.5px solid var(--border);display:flex;flex-direction:column}
+.project-card:first-child{border-top:none;padding-top:0}
+.building-meta{font-family:var(--font-mono);font-size:11px;letter-spacing:0.06em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:0.9rem}
+.timeline{margin-top:2.5rem;display:flex;flex-direction:column}
+.timeline-entry{padding:2rem 0;border-top:0.5px solid var(--border)}
+.timeline-entry:first-child{border-top:none;padding-top:0}
+.timeline-date{font-family:var(--font-mono);font-size:12px;letter-spacing:0.06em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:0.7rem}
+.timeline-org{font-family:var(--font-display);font-size:1.35rem;font-weight:500;color:var(--ink);margin-bottom:0.2rem}
+.timeline-role{font-size:14px;font-weight:600;color:var(--navy);margin-bottom:0.9rem}
+.timeline-entry ul{font-size:13.5px;color:var(--ink-muted);line-height:1.75;padding-left:1.1rem}
 .skills-section-inner{margin-top:1.25rem}
-.cred-columns{display:grid;grid-template-columns:3fr 2fr;gap:3.5rem;margin-top:1.5rem}
-.cred-subhead{font-family:var(--font-display);font-size:1.3rem;font-weight:500;margin-bottom:1.1rem;padding-bottom:0.7rem;border-bottom:0.5px solid var(--border)}
-.skill-row{margin-bottom:1.25rem}
+.cred-columns{display:grid;grid-template-columns:3fr 2fr;gap:4rem;margin-top:1.5rem}
+.cred-subhead{font-family:var(--font-display);font-size:1.3rem;font-weight:500;margin-bottom:1.2rem;padding-bottom:0.75rem;border-bottom:0.5px solid var(--border)}
+.skill-row{margin-bottom:1.35rem}
 .skill-row:last-child{margin-bottom:0}
-.skill-row-label{font-size:16px;font-weight:600;color:var(--ink);line-height:1.4}
+.skill-row-label{font-size:14px;font-weight:600;color:var(--ink);line-height:1.4}
 .skill-row-items{font-size:14px;color:var(--ink-muted);margin-top:0.25rem}
-.cert-entry{margin-bottom:1.25rem}
+.cert-entry{margin-bottom:1.35rem}
 .cert-entry:last-child{margin-bottom:0}
-.cert-name{font-size:16px;font-weight:600;color:var(--ink);line-height:1.4}
+.cert-name{font-size:14px;font-weight:600;color:var(--ink);line-height:1.4}
 .cert-provider{font-size:13px;color:var(--ink-muted);margin-top:0.25rem}
 .skills-intro{font-size:15px;color:var(--ink-muted);line-height:1.7;margin-bottom:0.5rem;max-width:620px}
-.skills-categories{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1.5rem}
-.skill-category{background:white;border:0.5px solid var(--border);border-radius:8px;padding:1.25rem}
-.skill-category-title{font-size:12px;font-weight:500;letter-spacing:0.06em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:0.75rem}
-.skill-tag-list{display:flex;flex-wrap:wrap;gap:6px}
-.skill-tag{font-size:12px;padding:4px 10px;border-radius:40px;border:0.5px solid var(--border);color:var(--ink-muted)}
-.contact-inner{background:var(--ink);color:var(--cream);border-radius:12px;padding:3rem;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:1.5rem}
+#contact{background:var(--ink);max-width:none;padding:5rem 4rem 4rem}
+.contact-inner{max-width:1140px;margin:0 auto;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.5rem}
 .contact-inner h2{font-family:var(--font-display);font-size:2.4rem;font-weight:500;color:var(--cream)}
-.contact-inner p{font-size:14px;color:rgba(250,249,246,0.6);margin-top:0.4rem;max-width:400px}
-.contact-info{display:flex;flex-direction:row;gap:2rem;align-items:center;justify-content:center}
-.contact-email{font-size:14px;font-weight:500;color:var(--cream)}
-.contact-linkedin{font-size:14px;color:rgba(250,249,246,0.65);text-decoration:none;border-bottom:1px solid rgba(250,249,246,0.3)}
-.contact-linkedin:hover{color:var(--cream);border-color:var(--cream)}
-footer{text-align:center;padding:2rem;font-size:12px;color:var(--ink-faint);border-top:0.5px solid var(--border);max-width:1140px;margin:0 auto}
+.contact-inner p{font-size:14px;color:rgba(247,245,239,0.6);margin-top:0.4rem;max-width:420px}
+.contact-info{display:flex;flex-direction:row;gap:1rem;align-items:center;justify-content:center;font-size:14px}
+.contact-link{color:var(--cream);text-decoration:none;border-bottom:1px solid rgba(247,245,239,0.3)}
+.contact-link:hover{border-color:var(--cream)}
+.contact-sep{color:rgba(247,245,239,0.35)}
+footer{background:var(--ink);color:rgba(247,245,239,0.5);text-align:center;padding:1.5rem 2rem;font-size:12px;border-top:1px solid rgba(247,245,239,0.12);max-width:none}
 @media(max-width:640px){
-.contact-inner{padding:2rem}.contact-info{flex-direction:column;gap:0.75rem}
-}
-@media(max-width:640px){
-.contact-inner{padding:2rem}.contact-info{flex-direction:column;gap:0.75rem}
 .cred-columns{grid-template-columns:1fr;gap:2.5rem}
+.contact-info{flex-direction:column;gap:0.6rem}
+.contact-sep{display:none}
+nav{padding:0 1.25rem}section{padding:3rem 1.25rem}#contact{padding:3.5rem 1.25rem 3rem}
 }
 </style>
 </head>
 <body>
-
 
 <nav>
   <div class="nav-logo">Bryce Markman</div>
@@ -116,11 +110,10 @@ footer{text-align:center;padding:2rem;font-size:12px;color:var(--ink-faint);bord
     <li><a href="#projects">Projects</a></li>
     <li><a href="#currently-building">Currently Building</a></li>
     <li><a href="#experience">Experience</a></li>
-    <li><a href="#skills">Skills &amp; Certifications</a></li>
+    <li><a href="#skills">Certifications &amp; Skills</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
-
 
 <div class="hero">
   <div>
@@ -136,15 +129,12 @@ footer{text-align:center;padding:2rem;font-size:12px;color:var(--ink-faint);bord
   </div>
 </div>
 
-
 <hr class="divider"/>
-
 
 <section id="projects">
   <p class="section-label">Selected Work</p>
   <h2>Projects</h2>
-    <div class="projects-grid-v2">
-
+  <div class="projects-grid-v2">
 
     <div class="project-card-v2">
       <div class="project-card-v2-band" style="background:var(--accent)">
@@ -162,7 +152,6 @@ footer{text-align:center;padding:2rem;font-size:12px;color:var(--ink-faint);bord
       </div>
     </div>
 
-
     <div class="project-card-v2">
       <div class="project-card-v2-band" style="background:var(--teal)">
         <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="4,17 10,10 14,13 20,5"/><circle cx="20" cy="5" r="1.4" fill="white" stroke="none"/></svg>
@@ -178,7 +167,6 @@ footer{text-align:center;padding:2rem;font-size:12px;color:var(--ink-faint);bord
         <div class="card-footer"><a href="https://drive.google.com/drive/folders/1E9lINPPNbteo-KT8_uLcP6OKW96jDbs4?usp=drive_link" target="_blank" style="font-size:12px;color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent)">View Project</a></div>
       </div>
     </div>
-
 
     <div class="project-card-v2">
       <div class="project-card-v2-band" style="background:var(--green)">
@@ -196,7 +184,6 @@ footer{text-align:center;padding:2rem;font-size:12px;color:var(--ink-faint);bord
       </div>
     </div>
 
-
     <div class="project-card-v2">
       <div class="project-card-v2-band" style="background:var(--amber)">
         <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5.5" rx="7" ry="2.5"/><path d="M5 5.5v13c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5v-13"/><path d="M5 12c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5"/></svg>
@@ -213,162 +200,106 @@ footer{text-align:center;padding:2rem;font-size:12px;color:var(--ink-faint);bord
       </div>
     </div>
 
-
   </div>
-
 
   <div style="margin-top:2rem;padding:1rem 1.25rem;background:var(--accent-light);border:0.5px solid rgba(24,95,165,0.2);border-radius:8px;display:flex;align-items:center;justify-content:center">
     <a href="https://drive.google.com/drive/folders/1kp6q0uu6QlpMFmGFJn42PJhrZ5tbiVEf?usp=drive_link" target="_blank" style="font-size:13px;font-weight:500;color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent)">View All Project Files →</a>
   </div>
 </section>
 
-
 <hr class="divider"/>
-
 
 <section id="currently-building">
   <p class="section-label">In Progress</p>
   <h2>Currently Building</h2>
   <div class="building-grid">
 
-
     <div class="project-card">
-      <div class="skill-pills-top">
-        <span class="status-badge">In Development</span><span class="skill-pill-top sp-blue">Python</span><span class="skill-pill-top sp-blue">SQL</span><span class="skill-pill-top sp-gray">Git</span><span class="skill-pill-top sp-gray">Linux</span>
-      </div>
+      <p class="building-meta">In Development &middot; Python &middot; SQL &middot; Git &middot; Linux</p>
       <p class="project-title">Prediction Markets Trade Ops &amp; Risk System</p>
       <p class="project-desc">Building a trade-support system for prediction markets to track positions, calculate daily P&amp;L, monitor exposure, and automate reconciliation and exception reporting.</p>
       <p class="project-planned">Planned: P&amp;L, reconciliation, risk dashboard</p>
     </div>
 
-
     <div class="project-card">
-      <div class="skill-pills-top">
-        <span class="status-badge">In Development</span><span class="skill-pill-top sp-blue">Python</span><span class="skill-pill-top sp-blue">SQL</span><span class="skill-pill-top sp-gray">Statistics</span><span class="skill-pill-top sp-gray">Sports Betting</span>
-      </div>
+      <p class="building-meta">In Development &middot; Python &middot; SQL &middot; Statistics &middot; Sports Betting</p>
       <p class="project-title">Sportsbook Pricing &amp; Market Efficiency Analysis</p>
       <p class="project-desc">Analyzing historical sportsbook odds and line movement to understand how prices evolve, how accurately markets reflect underlying probabilities, and where model estimates differ from closing market prices.</p>
       <p class="project-planned">Planned: line movement, implied probability, model comparison</p>
     </div>
 
-
   </div>
 </section>
 
-
 <hr class="divider"/>
-
 
 <section id="experience">
   <p class="section-label">Work History</p>
   <h2>Experience</h2>
-  <div style="margin-top:2rem;display:flex;flex-direction:column;gap:1.25rem">
+  <div class="timeline">
 
-
-    <div style="background:white;border:0.5px solid var(--border);border-radius:8px;padding:1.5rem">
-      <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:0.5rem;margin-bottom:0.75rem">
-        <div>
-          <p style="font-size:15px;font-weight:500;color:var(--ink)">Associate Trader</p>
-          <p style="font-size:13px;color:var(--accent);font-weight:500">Fanatics Betting & Gaming</p>
-        </div>
-        <div style="text-align:right">
-          <p style="font-size:12px;color:var(--ink-faint)">May 2026 – Present</p>
-          <p style="font-size:12px;color:var(--ink-faint)">Denver, CO</p>
-        </div>
-      </div>
-      <ul style="font-size:13px;color:var(--ink-muted);line-height:1.7;padding-left:1.1rem">
+    <div class="timeline-entry">
+      <p class="timeline-date">May 2026 &mdash; Present &middot; Denver, CO</p>
+      <p class="timeline-org">Fanatics Betting &amp; Gaming</p>
+      <p class="timeline-role">Associate Trader</p>
+      <ul>
         <li>Monitor live and pre-match sports betting markets, evaluating odds movement, market activity, and pricing changes across sporting events.</li>
         <li>Support trading operations by applying probability, statistical analysis, and risk assessment to market decisions in a fast-paced sportsbook environment.</li>
         <li>Identify market trends and irregularities while collaborating with trading teams to maintain accurate and competitive pricing.</li>
       </ul>
     </div>
 
-
-    <div style="background:white;border:0.5px solid var(--border);border-radius:8px;padding:1.5rem">
-      <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:0.5rem;margin-bottom:0.75rem">
-        <div>
-          <p style="font-size:15px;font-weight:500;color:var(--ink)">Sports Analytics Summer Research Lab Assistant</p>
-          <p style="font-size:13px;color:var(--accent);font-weight:500">University of Denver Analytics Department</p>
-        </div>
-        <div style="text-align:right">
-          <p style="font-size:12px;color:var(--ink-faint)">Jun. 2025 – Sep. 2025</p>
-          <p style="font-size:12px;color:var(--ink-faint)">Denver, CO (Remote)</p>
-        </div>
-      </div>
-      <ul style="font-size:13px;color:var(--ink-muted);line-height:1.7;padding-left:1.1rem">
+    <div class="timeline-entry">
+      <p class="timeline-date">Jun. 2025 &mdash; Sep. 2025 &middot; Denver, CO (Remote)</p>
+      <p class="timeline-org">University of Denver Analytics Department</p>
+      <p class="timeline-role">Sports Analytics Summer Research Lab Assistant</p>
+      <ul>
         <li>Assisted in building a regression model using WNBA player and team data to identify key factors that drive performance and team success.</li>
         <li>Helped analyze results and translate findings into clear, actionable insights on performance trends for decision-making.</li>
       </ul>
     </div>
 
-
-    <div style="background:white;border:0.5px solid var(--border);border-radius:8px;padding:1.5rem">
-      <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:0.5rem;margin-bottom:0.75rem">
-        <div>
-          <p style="font-size:15px;font-weight:500;color:var(--ink)">Desk Assistant</p>
-          <p style="font-size:13px;color:var(--accent);font-weight:500">University of Denver Resident Life</p>
-        </div>
-        <div style="text-align:right">
-          <p style="font-size:12px;color:var(--ink-faint)">Aug. 2025 – June 2026</p>
-          <p style="font-size:12px;color:var(--ink-faint)">Denver, CO</p>
-        </div>
-      </div>
-      <ul style="font-size:13px;color:var(--ink-muted);line-height:1.7;padding-left:1.1rem">
+    <div class="timeline-entry">
+      <p class="timeline-date">Aug. 2025 &mdash; June 2026 &middot; Denver, CO</p>
+      <p class="timeline-org">University of Denver Resident Life</p>
+      <p class="timeline-role">Desk Assistant</p>
+      <ul>
         <li>Managed package logging and distribution for students in the dorms.</li>
         <li>Served as the first point of contact for any questions residents may have.</li>
       </ul>
     </div>
 
-
-    <div style="background:white;border:0.5px solid var(--border);border-radius:8px;padding:1.5rem">
-      <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:0.5rem;margin-bottom:0.75rem">
-        <div>
-          <p style="font-size:15px;font-weight:500;color:var(--ink)">Sports Referee</p>
-          <p style="font-size:13px;color:var(--accent);font-weight:500">University of Denver Intramurals</p>
-        </div>
-        <div style="text-align:right">
-          <p style="font-size:12px;color:var(--ink-faint)">Sep. 2023 – June 2026</p>
-          <p style="font-size:12px;color:var(--ink-faint)">Denver, CO</p>
-        </div>
-      </div>
-      <ul style="font-size:13px;color:var(--ink-muted);line-height:1.7;padding-left:1.1rem">
+    <div class="timeline-entry">
+      <p class="timeline-date">Sep. 2023 &mdash; June 2026 &middot; Denver, CO</p>
+      <p class="timeline-org">University of Denver Intramurals</p>
+      <p class="timeline-role">Sports Referee</p>
+      <ul>
         <li>Officiated intramural sports such as volleyball, basketball, soccer, and flag football.</li>
         <li>Learned each sport's rulebook, as well as first-aid and conflict mediation techniques.</li>
       </ul>
     </div>
 
-
-    <div style="background:white;border:0.5px solid var(--border);border-radius:8px;padding:1.5rem">
-      <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:0.5rem;margin-bottom:0.75rem">
-        <div>
-          <p style="font-size:15px;font-weight:500;color:var(--ink)">Valet Attendant</p>
-          <p style="font-size:13px;color:var(--accent);font-weight:500">Park Hyatt Aviara</p>
-        </div>
-        <div style="text-align:right">
-          <p style="font-size:12px;color:var(--ink-faint)">Summers 2024 & 2025</p>
-          <p style="font-size:12px;color:var(--ink-faint)">Carlsbad, CA</p>
-        </div>
-      </div>
-      <ul style="font-size:13px;color:var(--ink-muted);line-height:1.7;padding-left:1.1rem">
-        <li>Delivered top-tier hospitality by greeting guests warmly and ensuring quick, efficient vehicle retrieval, often running 8–9 miles each shift to minimize wait times.</li>
+    <div class="timeline-entry">
+      <p class="timeline-date">Summers 2024 &amp; 2025 &middot; Carlsbad, CA</p>
+      <p class="timeline-org">Park Hyatt Aviara</p>
+      <p class="timeline-role">Valet Attendant</p>
+      <ul>
+        <li>Delivered top-tier hospitality by greeting guests warmly and ensuring quick, efficient vehicle retrieval, often running 8&ndash;9 miles each shift to minimize wait times.</li>
         <li>Safely managed and parked high-value vehicles with attention to detail.</li>
       </ul>
     </div>
 
-
   </div>
 </section>
 
-
 <hr class="divider"/>
-
 
 <section id="skills">
   <p class="section-label">Credentials</p>
   <h2>Certifications &amp; Skills</h2>
   <div class="skills-section-inner">
     <p class="skills-intro">Core technical skills and certifications supporting my work across sports betting, analytics, and data science.</p>
-        <div class="cred-columns">
+    <div class="cred-columns">
       <div>
         <h3 class="cred-subhead">Certifications</h3>
         <div class="cert-entry">
@@ -400,29 +331,26 @@ footer{text-align:center;padding:2rem;font-size:12px;color:var(--ink-faint);bord
         </div>
       </div>
     </div>
+  </div>
 </section>
-
-
-<hr class="divider"/>
-
 
 <section id="contact">
   <div class="contact-inner">
     <div>
-      <h2>Let's connect</h2>
-      <p>Interested in opportunities across sports betting, trading, analytics, and data science, with a focus on roles that combine sports, markets, and data-driven decision-making.</p>
+      <h2>Let's Connect</h2>
+      <p>Interested in opportunities across sports betting, trading, analytics, and data science.</p>
     </div>
     <div class="contact-info">
-      <span class="contact-email">bryce.markman34@gmail.com</span>
-      <a href="https://www.linkedin.com/in/bryce-markman" target="_blank" class="contact-linkedin">LinkedIn</a>
+      <a href="mailto:bryce.markman34@gmail.com" class="contact-link">Email</a>
+      <span class="contact-sep">|</span>
+      <a href="https://www.linkedin.com/in/bryce-markman" target="_blank" class="contact-link">LinkedIn</a>
+      <span class="contact-sep">|</span>
+      <a href="Resume.pdf" target="_blank" class="contact-link">Resume</a>
     </div>
   </div>
 </section>
 
-
 <footer>© 2026 Bryce Markman</footer>
-
 
 </body>
 </html>
-
