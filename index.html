@@ -78,6 +78,7 @@ h2{font-family:var(--font-display);font-size:2.6rem;font-weight:500;letter-spaci
 footer{text-align:center;padding:2rem;font-size:12px;color:var(--ink-faint);border-top:0.5px solid var(--border);max-width:1140px;margin:0 auto}
 @media(max-width:640px){
 .contact-inner{padding:2rem}.contact-info{flex-direction:column;gap:0.75rem}
+}
 </style>
 </head>
 <body>
@@ -86,8 +87,9 @@ footer{text-align:center;padding:2rem;font-size:12px;color:var(--ink-faint);bord
   <div class="nav-logo">Bryce Markman</div>
   <ul class="nav-links">
     <li><a href="#projects">Projects</a></li>
-    <li><a href="#skills">Skills</a></li>
+    <li><a href="#currently-building">Currently Building</a></li>
     <li><a href="#experience">Experience</a></li>
+    <li><a href="#skills">Skills &amp; Certifications</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
@@ -203,37 +205,27 @@ footer{text-align:center;padding:2rem;font-size:12px;color:var(--ink-faint);bord
 
 <hr class="divider"/>
 
-<section id="skills">
-  <p class="section-label">Toolkit</p>
-  <h2>Skills</h2>
-  <div class="skills-section-inner">
-    <p class="skills-intro">A collection of the tools, languages, and skills I've built through hands-on projects, coursework, and real-world data at DU.</p>
-    <div class="skills-categories">
-      <div class="skill-category">
-        <p class="skill-category-title">Languages</p>
-        <div class="skill-tag-list"><span class="skill-tag">Python</span><span class="skill-tag">SQL</span><span class="skill-tag">R</span><span class="skill-tag">T-SQL</span></div>
+<section id="currently-building">
+  <p class="section-label">In Progress</p>
+  <h2>Currently Building</h2>
+  <div class="projects-grid">
+
+    <div class="project-card">
+      <div class="skill-pills-top">
+        <span class="skill-pill-top sp-amber">In Development</span><span class="skill-pill-top sp-blue">Python</span><span class="skill-pill-top sp-blue">SQL</span><span class="skill-pill-top sp-gray">Git</span><span class="skill-pill-top sp-gray">Linux</span>
       </div>
-      <div class="skill-category">
-        <p class="skill-category-title">Visualization</p>
-        <div class="skill-tag-list"><span class="skill-tag">Tableau</span><span class="skill-tag">Power BI</span><span class="skill-tag">DAX</span></div>
-      </div>
-      <div class="skill-category">
-        <p class="skill-category-title">Databases</p>
-        <div class="skill-tag-list"><span class="skill-tag">SQL Server</span><span class="skill-tag">SQLite</span></div>
-      </div>
-      <div class="skill-category">
-        <p class="skill-category-title">Statistical &amp; Machine Learning Methods</p>
-        <div class="skill-tag-list"><span class="skill-tag">Regression</span><span class="skill-tag">Optimization</span><span class="skill-tag">ANOVA</span><span class="skill-tag">NLP</span><span class="skill-tag">Sentiment Analysis</span><span class="skill-tag">Simulation</span><span class="skill-tag">Hypothesis Testing</span><span class="skill-tag">Dimensional Modeling</span></div>
-      </div>
-      <div class="skill-category">
-        <p class="skill-category-title">Tools &amp; Platforms</p>
-        <div class="skill-tag-list"><span class="skill-tag">Visual Studio</span><span class="skill-tag">Excel</span><span class="skill-tag">Jupyter</span><span class="skill-tag">Google Colab</span><span class="skill-tag">Lucidchart</span><span class="skill-tag">Visio</span><span class="skill-tag">R Studio</span><span class="skill-tag">GitHub</span></div>
-      </div>
-      <div class="skill-category">
-        <p class="skill-category-title">Certifications</p>
-        <div class="skill-tag-list"><span class="skill-tag">Excel Certified</span><span class="skill-tag">Word Certified</span><span class="skill-tag">PowerPoint Certified</span></div>
-      </div>
+      <p class="project-title">Prediction Markets Trade Operations &amp; Risk System</p>
+      <p class="project-desc">Building a trade-support system for prediction markets to track positions, calculate daily P&amp;L, monitor exposure, and automate reconciliation and exception reporting.</p>
     </div>
+
+    <div class="project-card">
+      <div class="skill-pills-top">
+        <span class="skill-pill-top sp-amber">In Development</span><span class="skill-pill-top sp-blue">Python</span><span class="skill-pill-top sp-blue">SQL</span><span class="skill-pill-top sp-gray">Statistics</span><span class="skill-pill-top sp-gray">Sports Betting</span>
+      </div>
+      <p class="project-title">Sportsbook Pricing &amp; Market Efficiency Analysis</p>
+      <p class="project-desc">Analyzing historical sportsbook odds and line movement to understand how prices evolve, how accurately markets reflect underlying probabilities, and where model estimates differ from closing market prices.</p>
+    </div>
+
   </div>
 </section>
 
@@ -291,8 +283,8 @@ footer{text-align:center;padding:2rem;font-size:12px;color:var(--ink-faint);bord
         </div>
       </div>
       <ul style="font-size:13px;color:var(--ink-muted);line-height:1.7;padding-left:1.1rem">
-        <li>Manage package logging and distribution for students in the dorms.</li>
-        <li>Serve as the first point of contact for any questions residents may have.</li>
+        <li>Managed package logging and distribution for students in the dorms.</li>
+        <li>Served as the first point of contact for any questions residents may have.</li>
       </ul>
     </div>
 
@@ -308,7 +300,7 @@ footer{text-align:center;padding:2rem;font-size:12px;color:var(--ink-faint);bord
         </div>
       </div>
       <ul style="font-size:13px;color:var(--ink-muted);line-height:1.7;padding-left:1.1rem">
-        <li>Referee intramural sports such as volleyball, basketball, soccer, and flag football.</li>
+        <li>Officiated intramural sports such as volleyball, basketball, soccer, and flag football.</li>
         <li>Learned each sport's rulebook, as well as first-aid and conflict mediation techniques.</li>
       </ul>
     </div>
@@ -335,11 +327,47 @@ footer{text-align:center;padding:2rem;font-size:12px;color:var(--ink-faint);bord
 
 <hr class="divider"/>
 
+<section id="skills">
+  <p class="section-label">Toolkit</p>
+  <h2>Skills &amp; Certifications</h2>
+  <div class="skills-section-inner">
+    <p class="skills-intro">A collection of the tools, languages, and skills I've built through hands-on projects, coursework, and real-world data at DU.</p>
+    <div class="skills-categories">
+      <div class="skill-category">
+        <p class="skill-category-title">Languages</p>
+        <div class="skill-tag-list"><span class="skill-tag">Python</span><span class="skill-tag">SQL</span><span class="skill-tag">R</span><span class="skill-tag">T-SQL</span></div>
+      </div>
+      <div class="skill-category">
+        <p class="skill-category-title">Visualization</p>
+        <div class="skill-tag-list"><span class="skill-tag">Tableau</span><span class="skill-tag">Power BI</span><span class="skill-tag">DAX</span></div>
+      </div>
+      <div class="skill-category">
+        <p class="skill-category-title">Databases</p>
+        <div class="skill-tag-list"><span class="skill-tag">SQL Server</span><span class="skill-tag">SQLite</span></div>
+      </div>
+      <div class="skill-category">
+        <p class="skill-category-title">Statistical &amp; Machine Learning Methods</p>
+        <div class="skill-tag-list"><span class="skill-tag">Regression</span><span class="skill-tag">Optimization</span><span class="skill-tag">ANOVA</span><span class="skill-tag">NLP</span><span class="skill-tag">Sentiment Analysis</span><span class="skill-tag">Simulation</span><span class="skill-tag">Hypothesis Testing</span><span class="skill-tag">Dimensional Modeling</span></div>
+      </div>
+      <div class="skill-category">
+        <p class="skill-category-title">Tools &amp; Platforms</p>
+        <div class="skill-tag-list"><span class="skill-tag">Visual Studio</span><span class="skill-tag">Excel</span><span class="skill-tag">Jupyter</span><span class="skill-tag">Google Colab</span><span class="skill-tag">Lucidchart</span><span class="skill-tag">Visio</span><span class="skill-tag">R Studio</span><span class="skill-tag">GitHub</span></div>
+      </div>
+      <div class="skill-category">
+        <p class="skill-category-title">Certifications</p>
+        <div class="skill-tag-list"><span class="skill-tag">Excel Certified</span><span class="skill-tag">Word Certified</span><span class="skill-tag">PowerPoint Certified</span></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <div id="contact" class="contact-inner">
+<hr class="divider"/>
+
+<section id="contact">
+  <div class="contact-inner">
     <div>
       <h2>Let's connect</h2>
-      <p>Open to full-time Data Analyst roles starting June 2026, based in Denver, CO and open to relocation.</p>
+      <p>Interested in opportunities across sports betting, trading, analytics, and data science, with a focus on roles that combine sports, markets, and data-driven decision-making.</p>
     </div>
     <div class="contact-info">
       <span class="contact-email">bryce.markman34@gmail.com</span>
